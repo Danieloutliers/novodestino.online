@@ -1,0 +1,311 @@
+@import "aos.css";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	color: inherit;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input,
+textarea {
+	background: none;
+	border: none;
+	border-radius: none;
+	color: inherit;
+	font: inherit;
+	outline: none;
+	pointer-events: auto;
+}
+
+a,
+button {
+	all: unset;
+	cursor: pointer;
+	color: inherit;
+	outline: none;
+	pointer-events: auto;
+	text-decoration: none;
+	background: none;
+	border: none;
+	border-radius: none;
+	color: inherit;
+	font: inherit;
+	outline: none;
+	pointer-events: auto;
+}
+
+* {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	border: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+
+button {
+	background: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow: overlay;
+	font-family: "Tomato Grotesk";
+}
+
+input,
+button,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+details summary::-webkit-details-marker {
+	display: none;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-Light.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-Bold.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-BoldSlanted.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-BoldSlanted.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-Black.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-BlackSlanted.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-BlackSlanted.woff") format("woff");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-Slanted.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-Slanted.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-Regular.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Tomato Grotesk";
+	src: url("../fonts/TomatoGrotesk-LightSlanted.woff2") format("woff2"),
+		url("../fonts/TomatoGrotesk-LightSlanted.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+.video-container {
+	top: 0;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16/9;
+	max-width: 1920px;
+	margin: 0 auto;
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+	user-select: none;
+	pointer-events: none;
+}
+
+.video-container video {
+	position: relative;
+	width: 120%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	object-position: top;
+	transition: all ease-in-out 0.3s;
+}
+
+.video-container .overflow {
+	display: block;
+	position: absolute;
+	inset: 0;
+	top: -200px;
+	height: max-content;
+}
+.video-container .overflow::after {
+	position: absolute;
+	content: "";
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 0) 0%,
+		rgba(0, 0, 0, 1) 70%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+@media (max-width: 1200px) {
+	.video-container .overflow {
+		top: -100px;
+		height: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.video-container .overflow {
+		top: -70px;
+	}
+}
+
+@media (max-width: 768px) {
+	.upper-hero__video {
+		width: 100% !important;
+		height: auto !important;
+	}
+}
