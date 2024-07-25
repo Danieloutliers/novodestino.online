@@ -144,7 +144,19 @@ if (window.sidebar) {
 
 <!-- FIM DO BLOQUEADOR EASYCODING-->
 
-
+<style>
+        .content {
+            display: none;
+        }
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -253,7 +265,31 @@ generate();</script></p>
     //scripts
   </script>
   <script src="js/e.js" charset="utf-8"></script>
-  
+  <script>
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        window.onload = function() {
+            if (isMobile()) {
+                document.querySelector('.content').style.display = 'block';
+            } else {
+                document.querySelector('.message').style.display = 'block';
+            }
+        };
+    </script><script>
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        window.onload = function() {
+            if (isMobile()) {
+                document.querySelector('.content').style.display = 'block';
+            } else {
+                document.querySelector('.message').style.display = 'block';
+            }
+        };
+    </script>
     
 </body>
 
