@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
-<!--
-  ATENÇÃO!!!
-  Esta página possui 13 scripts maliciosos contra cópia.
-  Não tente copiar, é inútil.
-
---->
-
+<html lang="pt-BR">
 <head>
-  
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo</title>
+    <style>
+        .content {
+            display: none;
+        }
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Virada de vida</title>
   <link rel="icon" href="assets/img/C5L-L007-FAVICON-150x150.png" sizes="32x32">
@@ -730,10 +740,23 @@ generate();</script>
   <script  src="js/com.js"></script>
   <script  src="js/minut.js"></script>
   <script  src="js/contagem.js"></script>
+    </div>
+    <div class="message">
+        <h1>A página caiu</h1>
+    </div>
 
-  
+    <script>
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
 
- 
+        window.onload = function() {
+            if (isMobile()) {
+                document.querySelector('.content').style.display = 'block';
+            } else {
+                document.querySelector('.message').style.display = 'block';
+            }
+        };
+    </script>
 </body>
-
 </html>
