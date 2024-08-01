@@ -24,7 +24,21 @@
 
   <meta name="facebook-domain-verification" content="y9lw5e0g6195zc436pyjpt449elat1" />
   
- 
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo</title>
+    <style>
+        .content {
+            display: none;
+        }
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
   
   
    <!-- Deixar o Site Rapido -->
@@ -175,13 +189,25 @@ if (window.sidebar) {
 <!-- Bloquear a função: Desabilitar JS - final -->
 
 <!-- FIM DO BLOQUEADOR EASYCODING-->
-
+ <style>
+        .content {
+            display: none;
+        }
+        .message {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 24px;
+            color: red;
+        }
+    </style>
   
 </head>
 
 <body>
-
+<div class="content">
   
+     
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDDKD7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -223,7 +249,7 @@ $("#city").html(response.city); {$("#city1").html(response.city); }{$("#city2").
 
 <div class="mt-lg-2 mt-sm-2"></div>
 </div>
-</div> 
+
         <p class="audio strong">
           <img class="sound" src="assets/img/audiob.webp"></span>
           <b style="color:white;">Por favor, certifique-se de que o som está ligado.</b>
@@ -746,7 +772,24 @@ generate();</script>
 
   
 
- 
-</body>
 
+    </div>
+    <div class="message">
+        <h1>A página caiu</h1>
+    </div>
+
+    <script>
+        function isMobile() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        window.onload = function() {
+            if (isMobile()) {
+                document.querySelector('.content').style.display = 'block';
+            } else {
+                document.querySelector('.message').style.display = 'block';
+            }
+        };
+    </script>
+</body>
 </html>
