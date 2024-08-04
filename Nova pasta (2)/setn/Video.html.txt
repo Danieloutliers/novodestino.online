@@ -1,0 +1,16 @@
+<div id="sticky-video" style="position:relative;padding-top:5.25%;">
+    <div id="vid_669da5e92d16c7000b20efc0" style="position:relative;width:100%;padding: 177.63157894736844% 0 0;">
+        <img id="thumb_669da5e92d16c7000b20efc0" src="https://images.converteai.net/130cd51e-1352-4b1d-a259-56fdd60113b4/players/669da5e92d16c7000b20efc0/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+        <div id="backdrop_669da5e92d16c7000b20efc0" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+    </div>
+    <script type="text/javascript" id="scr_669da5e92d16c7000b20efc0">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/130cd51e-1352-4b1d-a259-56fdd60113b4/players/669da5e92d16c7000b20efc0/player.js";
+        s.async=!0;
+        document.head.appendChild(s);
+    </script>
+    <style>
+        .elementor-element:has(#smartplayer) { width: 100%; }
+    </style>
+    <button class="close-sticky d-none">&times;</button>
+</div>

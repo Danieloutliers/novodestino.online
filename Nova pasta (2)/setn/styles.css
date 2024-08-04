@@ -1,0 +1,36 @@
+/* Estilos CSS para o vídeo sticky */
+.video-container {
+    position: relative;
+}
+
+.fixed-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.small-video {
+    width: 200px;
+    height: auto;
+}
+
+.close-sticky {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
