@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.hostname !== allowedDomain) {
         document.body.innerHTML = '<h1>Acesso não autorizado</h1>';
         setTimeout(function() {
-            window.location.href = 'plug-de-copia-de dados-invas.html';
+            window.location.href = 'https://www.google.com';
         }, 2000); // Redireciona após 2 segundos (2000 milissegundos)
     }
 });
