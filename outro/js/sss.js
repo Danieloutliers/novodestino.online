@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const allowedDomain = 'novodestino.online';
+    const allowedDomain = '';
     if (window.location.hostname !== allowedDomain) {
         document.body.innerHTML = '<h1>Acesso não autorizado</h1>';
         setTimeout(function() {
