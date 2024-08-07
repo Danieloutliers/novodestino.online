@@ -147,6 +147,7 @@ $('reply').on('click', function() {
     }
 })
 
+
 function handleReply(id) {
     var text = ''
     var obj = $('#' + id)
