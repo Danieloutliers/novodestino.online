@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const allowedDomain = 'fronteditor.dev';
+    const allowedDomain = 'novodestino.online';
     if (window.location.hostname !== allowedDomain) {
         document.body.innerHTML = '<h1>Acesso não autorizado</h1>';
         setTimeout(function() {
